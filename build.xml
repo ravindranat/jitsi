@@ -1793,6 +1793,16 @@ javax.swing.event, javax.swing.border"/>
             </jar>
         </target>
 
+    	<!-- BUNDLE-PLUGIN-EXAMPLE PLUGIN -->
+    	    <target name="bundle-plugin-maillugin">
+    	        <!-- Creates a bundle for the plugin SIP Account Registration Wizard.-->
+    	        <jar compress="false" destfile="${bundles.dest}/mailplugin.jar"
+    	            manifest="${src}/net/java/sip/communicator/plugin/mailplugin/mailplugin.manifest.mf">
+    	            <zipfileset dir="${dest}/net/java/sip/communicator/plugin/mailplugin"
+    	                prefix="net/java/sip/communicator/plugin/mailplugin"/>
+    	        </jar>
+    	    </target>
+
     <!-- BUNDLE-PLUGIN-BRANDING -->
         <target name="bundle-plugin-branding">
             <!-- Creates a bundle for the Splash Screen plugin.-->
